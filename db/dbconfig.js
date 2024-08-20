@@ -7,7 +7,6 @@ const mysql2 = require("mysql2");
 //     password: process.env.PASSWORD,
 //     connectionLimit: 10
 // });
-const dbconnection = mysql2.createPool(process.env.DB_URL
-);
+const dbconnection = mysql2.createPool(process.env.DB_URL);
 
 module.exports = dbconnection.promise();
